@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div
+    class="mainDiv"
+    style="background-image: url('./default-background.jpg')"
+  >
+    <div class="header">Weather App ⛅</div>
+
+    <div class="weatherDiv">
+      <div class="inputDiv">
+        <div class="input">
+          <input type="text" id="cityInput" placeholder="Enter City" />
+          <span class="searchIcon" id="searchButton">🔍</span>
+        </div>
+        <div class="time">
+          <p id="currentDate"></p>
+          <p id="currentTime"></p>
+        </div>
+      </div>
+
+      <div class="herSection">
+        <div class="showWeatherDiv">
+          <h1 id="temperature">--°<sub>C</sub></h1>
+          <h3 id="feelsLike">Feels Like: --°<sub>C</sub></h3>
+          <p id="location">City, Country</p>
+          <hr class="line" />
+          <p id="minTemp">min-temp: --°<sub>C</sub></p>
+          <p id="maxTemp">max-temp: --°<sub>C</sub></p>
+        </div>
+
+        <span></span>
+
+        <div class="extras">
+          <div class="Clouds extraFeatures">
+            <h3>☁️ Clouds</h3>
+            <h3 id="clouds">--%</h3>
+          </div>
+          <div class="Wind extraFeatures">
+            <h3>💨 Wind</h3>
+            <h3 id="windSpeed">-- m/s</h3>
+          </div>
+          <div class="Weather extraFeatures">
+            <h3>🌤️ Weather</h3>
+            <h3 id="weatherDescription">--</h3>
+          </div>
+          <div class="Pressure extraFeatures">
+            <h3>Pressure</h3>
+            <h3 id="pressure">-- hPa</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./dateTime.js"></script>
+  </body>
+</html>
